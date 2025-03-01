@@ -7,15 +7,15 @@ def binary_representation(v, k):
     n = len(v)
     bin_matrix = np.zeros((n * k, 1), dtype=int)
     
-    print(f"Converting v = {v} to binary with {k} bits per element")
+    # print(f"Converting v = {v} to binary with {k} bits per element")
     
     for i in range(n):
         binary_str = format(v[i], f'0{k}b')  # Convert to binary with k bits
-        print(f"v[{i}] = {v[i]} → Binary: {binary_str}")
+        # print(f"v[{i}] = {v[i]} → Binary: {binary_str}")
         bin_matrix[i * k:(i + 1) * k, 0] = [int(b) for b in reversed(binary_str)]
     
-    print("Binary representation matrix:")
-    print(bin_matrix)
+    # print("Binary representation matrix:")
+    # print(bin_matrix)
     return bin_matrix
 
 def gadget_matrix(n, k):
@@ -25,12 +25,12 @@ def gadget_matrix(n, k):
     I_n = np.eye(n, dtype=int)  # Identity matrix
     G = np.kron(I_n, g)  # Compute tensor product
     
-    print("Gadget vector g:")
-    print(g)
-    print("Identity matrix I_n:")
-    print(I_n)
-    print("Gadget matrix G:")
-    print(G)
+    # print("Gadget vector g:")
+    # print(g)
+    # print("Identity matrix I_n:")
+    # print(I_n)
+    # print("Gadget matrix G:")
+    # print(G)
     
     return G
 
