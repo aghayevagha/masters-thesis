@@ -17,18 +17,17 @@ This project focuses on implementing an **Identity-Based Encryption (IBE)** sche
   - Handles binary representation and Gadget matrix generation.
 
 - **`user.py`**  
-  - Not yet implemented.  
-  - Requires a **hash function** to convert a user's **ID to a vector**, which is still under development.  
+  - Completed the vectorization 
 
 ## Current Issues
 
 1. **Encryption-Decryption Bug:**  
    - The decryption process fails, possibly due to an error in the **Dual Regev scheme** implementation.  
    - Debugging the issue to identify what is missing.
-
+   - **Seems that I have fixed the issue** 
 2. **User ID to Vector Conversion:**  
    - Need to use a hash function and divide it into shorter pieces, and map  **user's ID to a vector**.
-
+   - **implemented** 
 ## Future Plans
 
 1. Validate the **correctness** of the DGS method.  
